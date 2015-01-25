@@ -1,5 +1,6 @@
 def alle_teilmengen(array)
   i = array.size
+  array = array.dup
   array.sort!
   alle_teilarrays = [[]]
   while i > 0 do

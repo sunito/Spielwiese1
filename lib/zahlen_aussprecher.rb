@@ -41,16 +41,16 @@ class ZahlenAussprecher
   end
         
   def +(summand)
-    ZahlenAussprecher.new(self.zahl + summand.zahl)
+    ZahlenAussprecher.new(self.zahl + summand.to_i)
   end
   def ==(zahl)
     self.zahl == zahl.zahl  
   end
   def -(subtrahend)
-    ZahlenAussprecher.new(self.zahl - subtrahend.zahl)
+    ZahlenAussprecher.new(self.zahl - subtrahend.to_i)
   end
   def *(faktor)
-    ZahlenAussprecher.new(self.zahl * faktor.zahl)
+    ZahlenAussprecher.new(self.to_i * faktor.to_i)
   end
   def /(divisor)
     ZahlenAussprecher.new((self.zahl / divisor.zahl).to_i)
